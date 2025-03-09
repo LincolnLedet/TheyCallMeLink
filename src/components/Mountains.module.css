@@ -1,0 +1,22 @@
+.mountainsContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--c1); /* Now uses the dynamic color from JavaScript */
+
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  display: block; /* Ensures SVG behaves properly */
+  object-fit: cover; /* Ensures full coverage */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 80vh;
+  min-width: 1400px
+
+}
+
