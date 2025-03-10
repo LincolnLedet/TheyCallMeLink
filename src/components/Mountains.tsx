@@ -87,9 +87,13 @@ const Mountains = () => {
   const [scrollY, setScrollY] = useState(0);
   const height_of_viewer = 5;
   const numLayers = 9;
-  const offsetDistance = 1.2; 
-  const layerOffsets = Array.from({ length: numLayers }, (_, i) => ((offsetDistance*numLayers) - offsetDistance * i));
-  console.log(layerOffsets);
+  const offsetDistance = 1.1;
+  ; 
+  const layerOffsets = Array.from(
+    { length: numLayers },
+    (_, i) => offsetDistance * (numLayers - 1 - i)
+  );
+  
   
   useEffect(() => {
     const updateParallax = () => {
@@ -119,15 +123,14 @@ const Mountains = () => {
       }}
     >
       
-      <svg viewBox="0 0 4000 1000" xmlns="http://www.w3.org/2000/svg" className={`${styles.layer} ${styles.layer1}`}>
+      <svg viewBox="0 0 4000 1000" xmlns="http://www.w3.org/2000/svg" className={`${styles.layer} ${styles.layer1} ${styles.clouds}` }style={{     transform: `translateY(calc(${scrollY * (1 - height_of_viewer / 10)}px - ${layerOffsets[1]}vh))`}}>
         <path
           d="M1830 81c23-15 55-16 83-21-32 8-63 15-91 32l-4 8c-22 8-47 9-69 18 33 2 65-15 98-14-132 29-265 60-397 86 38-32 94-25 130-60 30-5 57-21 88-20 20 6 37-5 56-6 7-22 34-31 54-22 17 8 34-4 52-1zm576 28c84-1 168-1 251 16 10 2 21 4 27 13-38 23-84 29-127 39l-1 5c10 2 20 3 29 7-45 1-90-2-134 7 25 8 54 8 79 17-64-1-129 0-192-11v-8c83-20 168-32 251-52-3-4-7-6-13-6-57-6-114-17-170-27zm-391 75c101-10 203-23 304-32v6c-50 9-101 15-150 28l-1 6c12 0 23-2 35-1-45 15-94 16-140 24-11-5-41 1-24-18l-1-9c-8 0-19 6-23-4zm36 15c23 18 55-6 82-4v-8c-27 1-55 5-82 12zm681-33c63-9 125 12 188 8-45 12-95 13-139 28 28 0 56-3 84-1-90 9-179 21-268 38-71 10-144 15-215 25-10 0-24 9-28-4 79-24 165-30 247-49 16-15 36-24 59-25 20-18 49-11 72-20zm198 60c18-1 37-6 55-4-40 13-90 12-125 30 17 5 34 2 51 3l-12 7c29 0 58-4 88-1-33 9-73 23-105 9-43 2-87-3-130 5-8-3-3-12 2-15-66 7-131 20-197 25v-9c123-23 249-33 373-50z"
           style={{ fill: colors.c2 }}
         />
       </svg>
 
-      <svg className={`${styles.layer} ${styles.layer2}`} style={{     transform: `translateY(calc(${scrollY * (1 - height_of_viewer / 100)}px - ${layerOffsets[1]}vh))`
-}} viewBox="0 0 4000 1000" xmlns="http://www.w3.org/2000/svg">
+      <svg className={`${styles.layer} ${styles.layer2}`} style={{     transform: `translateY(calc(${scrollY * (1 - height_of_viewer / 100)}px - ${layerOffsets[1]}vh))`}} viewBox="0 0 4000 1000" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M1740 213c11 1 556 40 576 44 10 1 19 5 29 4 14-3 27-9 41-10 13-1 25 3 38 3 12-1 24 3 36 3 9 1 20 0 28 5 9 4 18 9 28 9 11 1 21-3 32-3 14 0 25 9 37 13 9 3 19 1 27-3 11-3 17-14 28-16 11-3 21 4 32 2l30-6c12-1 23-5 34-4l24 4h32c15 1 29 5 44 5 12 0 25-2 37 0l23 6c10 2 19 8 30 9 16 2 30 12 47 13 16 2 33 3 49-1 4-1 0 710 0 710H0h1146s-7-784 0-786c8-2 16-2 24 0 10 2 20 8 30 10l54 3c27 0 53-5 80-4l39 2c14 2 29 3 43-3 11-3 21-9 32-9 11-1 22 2 32 7 15 6 32 3 47-1 18-3 35-12 53-12 17-1 35 3 52 3 9 0 19 4 28 2 14-2 28-6 42-7 13-1 25 7 38 8z"
           style={{ fill: colors.c2 }}/>

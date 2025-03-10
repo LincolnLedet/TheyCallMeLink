@@ -4,7 +4,7 @@
     justify-content: center;
     gap: 10vw;
     width: 100vw;
-    background-color: #f5e5e5;
+    background-color: #ffad39;
   }
   
   .button {
@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
-    border-radius: 10px;
+    background-color: rgb(50,0,0);
+
   }
   

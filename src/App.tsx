@@ -22,7 +22,7 @@ function App() {
       </div>
 
       <div>
-        <Landing /> {/* Render the Landing component */}
+        <Landing /> {/*Mountains.tsx*/}
       </div>
 
       <div ref={aboutRef} className={styles.section}>
