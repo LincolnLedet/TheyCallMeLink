@@ -82,6 +82,13 @@ const getCurrentColors = () => {
   return currentState ? currentState.colours : config.states[0].colours;
 };
 
+const setCSSVariables = (colors) => {
+  const root = document.documentElement;
+  Object.entries(colors).forEach(([key, value]) => {
+    root.style.setProperty(`--${key}`, value);
+  });
+};
+
 const Mountains = () => {
   const [colors, setColors] = useState(getCurrentColors());
   const [scrollY, setScrollY] = useState(0);

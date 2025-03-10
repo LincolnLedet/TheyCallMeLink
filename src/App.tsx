@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import styles from "./App.module.css"; 
-import Landing from "./components/Mountains.tsx"
+import Landing from "./components/Mountains.tsx";
+import NavBar from "./components/NavBar.tsx";
 
 
 function App() {
@@ -15,10 +16,8 @@ function App() {
   return (
     <>
     {/* if about Ref is underlined in red in vscooe don't worrie about it.  */}
-      <div className = {styles.nav}>
-        <button onClick={() => scrollToSection(aboutRef)}>About</button> 
-        <button onClick={() => scrollToSection(projectsRef)}>Projects</button>
-        <button onClick={() => scrollToSection(resumeRef)}>Resume</button>
+      <div>
+        <NavBar aboutRef={aboutRef} projectsRef={projectsRef} resumeRef={resumeRef} />
       </div>
 
       <div>
