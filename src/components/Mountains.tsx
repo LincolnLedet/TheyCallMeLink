@@ -103,6 +103,9 @@ const Mountains = () => {
   
   
   useEffect(() => {
+    // Set global CSS variables
+    setCSSVariables(getCurrentColors());
+
     const updateParallax = () => {
       setScrollY(window.scrollY);
     };

@@ -6,6 +6,12 @@
   background-color: var(--c1); /* Now uses the dynamic color from JavaScript */
 
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* Hides horizontal scroll */
+  width: 100vw;
+}
 
 .layer {
   position: absolute;
