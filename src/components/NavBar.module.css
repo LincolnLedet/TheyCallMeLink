@@ -9,7 +9,7 @@
   }
   
 button {
-    color: white;
+    color: var(--c8);
     font-size: 2vh;
     background-color: var(--c1);
     font-family: "Roboto", sans-serif;

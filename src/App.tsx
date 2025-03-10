@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import styles from "./App.module.css"; 
 import Landing from "./components/Mountains.tsx";
 import NavBar from "./components/NavBar.tsx";
-
+import About from "./components/About.tsx";
 
 function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -25,7 +25,7 @@ function App() {
       </div>
 
       <div ref={aboutRef} className={styles.section}>
-          <h2>About Section</h2>
+          <About/>
         </div>
         <div ref={projectsRef} className={styles.section}>
           <h2>Projects Section</h2>
