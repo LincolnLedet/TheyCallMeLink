@@ -1,18 +1,38 @@
 import React from "react";
 import styles from "./Resume.module.css";
+import { Worker, Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+import resume from "../assets/PDFS/Ledet_Resume.PDF";
 
 
 
 const Resume: React.FC = () => {
-    return ( 
-        <div className = {styles.aboutSection}>
-            <div className = {styles.info}>
-                <h1>Hello, I'm Lincoln Ledet</h1>
-                <p>Hello Welcome to my little corner of the internet.</p>
-                <p>This website serves as an all-encompassing portfolio, making my code, projects, and art accessible to everyone. It’s hosted on a personal server and is 100% homegrown and organic.</p>
+    return (
+        <>
+        <div className={styles.resumeSection}>
+
+
+            <div className={styles.Title}>
+                <h1>Experience</h1>
+
             </div>
 
+            <div className={styles.resumepdf}>
+                <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
+                    <Viewer fileUrl={resume} />
+                </Worker>
+            </div>
+            <div className={styles.downloadButton}>
+                <a href={resume} download="Ledet_Resume.PDF" className={styles.downloadLink}>
+                    Download Resume
+                </a>
+            </div>
+           
         </div>
+
+
+        </>
 
     )
 };

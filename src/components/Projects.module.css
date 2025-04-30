@@ -1,18 +1,25 @@
 .ProjectSection{
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--c9);
     flex-direction: column;
     gap: 0vh;
+    z-index: 2;
 
+}
+
+h1 {
+    padding-top: 50px;
+    font-size: 80px;
+    z-index: 2;
 }
 
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 70px;
     
 }
 .gridItem {
@@ -24,6 +31,7 @@
     cursor: pointer;
     background-color: var(--c7);
     transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
     
     
 }
@@ -37,6 +45,8 @@
     height: 100px;
     width: 100px;
     opacity: 0;
+    border-radius: 20px;
+    
 }
 
 .gridItem:hover  {
@@ -59,4 +69,15 @@
 }
 .gridItem:hover .overlayText {
     opacity: 1;
+}
+
+.rockLayerPath{
+    fill: var(--c10); /* Replace 'blue' with your desired color */
+    
+}
+
+
+.rockLayer2{
+    transform: translateY(8px);
+
 }

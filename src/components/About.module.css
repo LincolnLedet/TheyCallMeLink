@@ -3,19 +3,25 @@
 
 .aboutSection {
     height: 100vh;
+    min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--c10);
+
     flex-direction: row;
     gap: 14vw;
     padding-left: 160px;
     padding-right: 160px;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    overflow:hidden;
+
   }
 
 .info { 
     display: flex;
     flex-direction: column;
+    min-width: 700px;
 }
 
 p{
@@ -30,4 +36,26 @@ h1{
 .profilePic{
     border-radius: 50%;
     width: 400px;
+}
+
+.rocklayer1{
+    width:100vw;
+    overflow: hidden;
+    transform: translateY(8px);
+    z-index: 0;
+    
+
+
+}
+
+.rockLayer1Path{
+    fill: var(--c9); /* Replace 'blue' with your desired color */
+    width:100vw;
+
+    
+}
+.aboutSectionContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c10);
 }
