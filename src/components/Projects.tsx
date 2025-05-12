@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Projects.module.css";
 import profilePic from "../assets/pixleProfilePic.png"
 import sensationalistPic from "../assets/Sensationalist.png";
+import stockPic from "../assets/stockImg.jpg";
+import guitarPic from "../assets/GuitarPedal.png"
 
 const Projects: React.FC = () => {
     return (
@@ -12,46 +14,31 @@ const Projects: React.FC = () => {
                     <img src={sensationalistPic} alt="Image 1" />
                     <div className={styles.overlayText}>
                         <p> The Sensationalist</p>
-                        A Full Stack Publication Website
+                        A full‑stack publication website.
 
                     </div>
                 </a>
-                <div className={styles.gridItem}>
-                    <img src={sensationalistPic} alt="Image 1" />
+
+                <a href="https://github.com/LincolnLedet/StockSentimentAnalysis" target="_blank" rel="noopener noreferrer" className={styles.gridItem}>
+                    <img src={stockPic} alt="Image 2" />
                     <div className={styles.overlayText}>
-                        <p>LetsPlantNative!</p>
-                        An AI powered website to connect landscapers with local native nurcerys (coming soon)
+                        <p>Stock Sentiment Analysis</p>
+                        A tool that predicts stock price changes based on recent news headlines.
 
                     </div>
-                </div>
-                <div className={styles.gridItem}>
-                    <img src={profilePic} alt="Image 3" />
+                </a>
+
+                <a href="https://devpost.com/software/python-guitar-pedal" target="_blank" rel="noopener noreferrer" className={styles.gridItem}>
+                    <img src={guitarPic} alt="Image 3" />
                     <div className={styles.overlayText}>
-                        <p>Sentiment analisis Stock corrilator </p>
-                        A real time stock prodictuor that uses machine learning and apis predict short term stock movments
+                        <p>Python Audio Processor</p>
+                        A Python app for guitar effects that visualizes and manipulates audio signals.
+
                     </div>
-                </div>
-                <div className={styles.gridItem}>
-                    <img src={profilePic} alt="Image 3" />
-                    <div className={styles.overlayText}>
-                        <p>Sentiment analisis Stock corrilator </p>
-                        A real time stock prodictuor that uses machine learning and apis predict short term stock movments
-                    </div>
-                </div>
-                <div className={styles.gridItem}>
-                    <img src={profilePic} alt="Image 3" />
-                    <div className={styles.overlayText}>
-                        <p>Sentiment analisis Stock corrilator </p>
-                        A real time stock prodictuor that uses machine learning and apis predict short term stock movments
-                    </div>
-                </div>
-                <div className={styles.gridItem}>
-                    <img src={profilePic} alt="Image 3" />
-                    <div className={styles.overlayText}>
-                        <p>Sentiment analisis Stock corrilator </p>
-                        A real time stock prodictuor that uses machine learning and apis predict short term stock movments
-                    </div>
-                </div>
+                </a>
+
+
+
                 
             </div>
             <div className={styles.rockLayer2}>
