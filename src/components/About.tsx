@@ -1,7 +1,14 @@
+
 import React from "react";
 import styles from "./About.module.css";
 import profilePic from "../assets/pixleProfilePic.png";
+import GitHubIcon from "../assets/githubIcon.svg";
+import InstagramIcon from "../assets/InstagramIcon.svg";
+import LinkedinIcon from "../assets/linkedinIcon.svg";
 
+
+
+const iconSize = { width: 32, height: 32 };
 
 
 const aboutSection: React.FC = () => {
@@ -13,6 +20,17 @@ const aboutSection: React.FC = () => {
                     <p>I recently graduated with a degree in computer science and am currently working full-time as a cybersecurity associate at UGA’s Security Operations Center. Before that, I worked as a restoration botany technician in the mountains of Northern California—an experience that inspired this website’s design. Although I’ve graduated, my learning hasn’t stopped—I’m studying for the CompTIA Network+ and AWS Cloud Practitioner certifications, and working on some fun personal software projects.</p>
                     <p>Outside of software, I spend my time gardening, playing guitar and keyboard in local bands, organizing community events, and staying active through hiking, biking, and skateboarding. I believe hobbies and artistic outlets boost my creativity, happiness and productivity.</p>
                     <p>Thank you for checking out my website! Feel free to look around and explore some of my projects, music, and easter eggs!</p>
+                    <div className={styles.linksWithIcons}>
+                        <a href="https://github.com/LincolnLedet" target="_blank" rel="noopener noreferrer">
+                        <img src= {GitHubIcon} className={styles.githubIcon}/>
+                        </a>
+                        <a href="https://www.instagram.com/lincolnledet/" target="_blank" rel="noopener noreferrer">
+                        <img src= {InstagramIcon} className={styles.githubIcon}/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lincoln-ledet/" target="_blank" rel="noopener noreferrer">
+                        <img src= {LinkedinIcon} className={styles.githubIcon}/>
+                        </a>
+                    </div>
                 </div>
                 <img src={profilePic} alt="Profile" className={styles.profilePic}></img>
 
