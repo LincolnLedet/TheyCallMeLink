@@ -78,3 +78,19 @@ h1{
     flex-direction: column;
     background-color: var(--c10);
 }
+@media (max-width: 800px) {
+
+    .aboutSection {
+
+        height:240vh;
+        flex-direction: column-reverse;
+
+      }
+
+    .info { 
+        display: flex;
+        flex-direction: column;
+        min-width: 00px;
+        text-align: center;
+    }
+}
