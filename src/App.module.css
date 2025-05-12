@@ -2,6 +2,6 @@
   
 .homepage{
     border: 8px solid  var(--c10); /* Border thickness and color */
-    max-width: 100vw;
+    max-width: calc(100vw - 31px);
     overflow: auto; 
 }

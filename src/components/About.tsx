@@ -11,7 +11,7 @@ const aboutSection: React.FC = () => {
                 <div className={styles.info}>
                     <h1>Hey, I'm Lincoln</h1>
                     <p>I recently graduated with a degree in computer science and am currently working full-time as a cybersecurity associate at UGA’s Security Operations Center. Before that, I worked as a restoration botany technician in the mountains of Northern California—an experience that inspired this website’s design. Although I’ve graduated, my learning hasn’t stopped—I’m studying for the CompTIA Network+ and AWS Cloud Practitioner certifications, and working on some fun personal software projects.</p>
-                    <p>Outside of software, I spend my time gardening, playing guitar and keyboard in local bands, organizing community events, and staying active through hiking, biking, and skateboarding. I believe hobbies and artistic outlets boost my creativity, happiness and productivity.</p>
+                    <p>Outside of software, I spend my time gardening, playing guitar, organizing community events, and staying active through hiking, biking, and skateboarding. I believe hobbies and artistic outlets boost my creativity, happiness and productivity.</p>
                     <p>Thank you for checking out my website! Feel free to look around and explore some of my projects, music, and easter eggs!</p>
                 </div>
                 <img src={profilePic} alt="Profile" className={styles.profilePic}></img>
