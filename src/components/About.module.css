@@ -7,24 +7,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: row;
-    gap: 10vw;
+    gap: 5vw;
     padding-left: 160px;
     padding-right: 160px;
     padding-top: 30px;
-    overflow:hidden;
+
 
   }
 
 .info { 
     display: flex;
     flex-direction: column;
-    min-width: 700px;
 }
 
 p{
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-family: sans-serif;
     color: whitesmoke
 
@@ -39,6 +37,8 @@ h1{
     filter: invert(100%) sepia(0%) saturate(1794%) hue-rotate(12deg) brightness(118%) contrast(80%);
     height: 60px;
     width: 60px;
+    min-width: 100px;
+
 
 }
 .profilePic{
@@ -62,6 +62,8 @@ h1{
     overflow: hidden;
     transform: translateY(8px);
     z-index: 0;
+    max-width: calc(100vw - 31px);
+
     
 
 
@@ -69,7 +71,7 @@ h1{
 
 .rockLayer1Path{
     fill: var(--c9); /* Replace 'blue' with your desired color */
-    width:100vw;
+
 
     
 }
@@ -78,11 +80,11 @@ h1{
     flex-direction: column;
     background-color: var(--c10);
 }
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
 
     .aboutSection {
 
-        height:240vh;
+        height:1800px;
         flex-direction: column-reverse;
 
       }
@@ -90,7 +92,23 @@ h1{
     .info { 
         display: flex;
         flex-direction: column;
-        min-width: 00px;
+        width: 80vw;
+        
         text-align: center;
+        align-items: center;
     }
+
+    .profilePic{
+        border-radius: 50%;
+        width: 300px; 
+        color: #e6e6e6
+    }
+
+    .linksWithIcons{
+
+    justify-items: center;
+    gap:60px;
+
+
+}
 }

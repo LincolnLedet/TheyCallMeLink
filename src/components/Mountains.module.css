@@ -9,7 +9,6 @@
 
 .layer {
   position: absolute;
-  width: 100vw;
   bottom: 0;
   display: block; /* Ensures SVG behaves properly */
   object-fit: cover; /* Ensures full coverage */

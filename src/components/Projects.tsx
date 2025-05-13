@@ -43,10 +43,9 @@ const Projects: React.FC = () => {
             <div className={styles.rockLayer2}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 5 90 10" /* Match Rock Layer 1 */
-                    width="100vw" /* Match Rock Layer 1 */
-                    height="190px" /* Match Rock Layer 1 */
-                    preserveAspectRatio="none" /* Match Rock Layer 1 */
+                    viewBox="0 8 100 5"
+                    width="2000px"
+                    height="180px"
                 >
                     <path
                         className={styles.rockLayerPath}

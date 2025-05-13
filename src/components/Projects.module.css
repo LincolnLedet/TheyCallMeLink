@@ -11,15 +11,16 @@
 
 h1 {
     padding-top: 50px;
-    font-size: 80px;
+    font-size: 60px;
     z-index: 2;
 }
 
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 70px;
+    padding-bottom: 60px
     
 }
 .gridItem {
@@ -81,14 +82,22 @@ h1 {
 
 .rockLayerPath{
     fill: var(--c10); /* Replace 'blue' with your desired color */
+    overflow: hidden;
+    
     
 }
 
 
 .rockLayer2{
+    width:100vw;
+    overflow: hidden;
     transform: translateY(8px);
+    z-index: 0;
+    max-width: calc(100vw - 31px);
+    
 
 }
+
 
 @media (max-width: 800px) {
 
