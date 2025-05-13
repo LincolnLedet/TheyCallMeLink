@@ -1,18 +1,23 @@
-import React, { RefObject, useEffect, useState } from "react";
+// NavBar.tsx
+import React from "react";
 import styles from "./NavBar.module.css";
 
-const Navbar = ({
+type NavBarProps = {
+  aboutRef: React.RefObject<HTMLDivElement | null>;
+  projectsRef: React.RefObject<HTMLDivElement | null>;
+  resumeRef: React.RefObject<HTMLDivElement | null>;
+};
+
+export default function NavBar({
   aboutRef,
   projectsRef,
   resumeRef,
-}: {
-  aboutRef: RefObject<HTMLElement>;
-  projectsRef: RefObject<HTMLElement>;
-  resumeRef: RefObject<HTMLElement>;
-}) => {
-
-
-  const scrollToSection = (ref: RefObject<HTMLElement>) => {
+}: NavBarProps) {
+  // <T extends HTMLElement> lets us accept any HTMLElement ref,
+  // and we include |null so TS knows current might be null.
+  const scrollToSection = <T extends HTMLElement>(
+    ref: React.RefObject<T | null>
+  ) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -23,6 +28,4 @@ const Navbar = ({
       <button onClick={() => scrollToSection(resumeRef)}>RESUME</button>
     </div>
   );
-};
-
-export default Navbar;
+}

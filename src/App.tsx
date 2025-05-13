@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import {useRef } from "react";
 import styles from "./App.module.css"; 
 import Landing from "./components/Mountains.tsx";
 import NavBar from "./components/NavBar.tsx";
@@ -7,13 +7,11 @@ import Projects from "./components/Projects.tsx";
 import Resume from "./components/Resume.tsx";
 
 function App() {
-  const aboutRef = useRef<HTMLDivElement>(null);
-  const projectsRef = useRef<HTMLDivElement>(null);
-  const resumeRef = useRef<HTMLDivElement>(null);
+  const aboutRef   = useRef<HTMLDivElement | null>(null)
+  const projectsRef = useRef<HTMLDivElement | null>(null)
+  const resumeRef   = useRef<HTMLDivElement | null>(null)
 
-  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  }
+
 
   return (
     <>

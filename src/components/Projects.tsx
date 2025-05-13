@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Projects.module.css";
-import profilePic from "../assets/pixleProfilePic.png"
 import sensationalistPic from "../assets/Sensationalist.png";
 import stockPic from "../assets/stockImg.jpg";
 import guitarPic from "../assets/GuitarPedal.png"

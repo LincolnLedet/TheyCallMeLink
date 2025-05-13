@@ -1,5 +1,5 @@
 import styles from "./Mountains.module.css"; // Import the CSS module
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const config = {
   anims: {
@@ -71,7 +71,10 @@ const config = {
 // Add night again at 24:00 for seamless loop
 config.states.push({ ...config.states[0], name: "end", at: 24 });
 
-const getCurrentColors = () => {
+
+type ColourMap = Record<string, string>;
+
+const getCurrentColors = (): ColourMap => {
   const now = new Date();
   const hour = now.getHours();
 
@@ -82,7 +85,7 @@ const getCurrentColors = () => {
   return currentState ? currentState.colours : config.states[0].colours;
 };
 
-const setCSSVariables = (colors) => {
+const setCSSVariables = (colors: ColourMap) => {
   const root = document.documentElement;
   Object.entries(colors).forEach(([key, value]) => {
     root.style.setProperty(`--${key}`, value);
@@ -116,9 +119,10 @@ const Mountains = () => {
 
 
   return (
-    <div
-      className={styles.mountainsContainer}
-      style={{
+  <div
+    className={styles.mountainsContainer}
+    style={
+      {
         "--c0": colors.c0,
         "--c1": colors.c1,
         "--c2": colors.c2,
@@ -130,8 +134,10 @@ const Mountains = () => {
         "--c8": colors.c8,
         "--c9": colors.c9,
         "--c10": colors.c10,
-      }}
-    >
+      } as React.CSSProperties
+    }
+  >
+    
       
       <svg viewBox="0 0 4000 1000" xmlns="http://www.w3.org/2000/svg" className={`${styles.layer} ${styles.layer1} ${styles.clouds}` }style={{     transform: `translateY(calc(${scrollY * (1 - height_of_viewer / 10)}px - ${layerOffsets[1]}vh))`}}>
         <path

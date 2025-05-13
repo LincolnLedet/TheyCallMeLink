@@ -8,8 +8,6 @@ import LinkedinIcon from "../assets/linkedinIcon.svg";
 
 
 
-const iconSize = { width: 32, height: 32 };
-
 
 const aboutSection: React.FC = () => {
     return (

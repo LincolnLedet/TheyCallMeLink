@@ -3,7 +3,7 @@ import styles from "./Resume.module.css";
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import resume from "../assets/PDFS/Ledet_Resume.PDF";
+import resume from "../assets/PDFS/Ledet_Resume.pdf";
 
 
 
