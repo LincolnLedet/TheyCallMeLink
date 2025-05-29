@@ -3,7 +3,8 @@
 
 .aboutSection {
     height: 100vh;
-    min-height: 100px;
+    min-height: 850px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,26 +15,25 @@
     padding-top: 30px;
 
 
-  }
+}
 
-.info { 
+.info {
     display: flex;
     flex-direction: column;
 }
 
-p{
+p {
     font-size: 1.3em;
     font-family: sans-serif;
     color: whitesmoke
-
 }
 
-h1{
-    font-family: sans-serif; 
+h1 {
+    font-family: sans-serif;
     color: whitesmoke
 }
 
-.info img{
+.info img {
     filter: invert(100%) sepia(0%) saturate(1794%) hue-rotate(12deg) brightness(118%) contrast(80%);
     height: 60px;
     width: 60px;
@@ -41,74 +41,79 @@ h1{
 
 
 }
-.profilePic{
+
+.profilePic {
     border-radius: 50%;
-    width: 400px; 
+    width: 400px;
     color: #e6e6e6
 }
 
-.linksWithIcons{
+.linksWithIcons {
     display: flex;
     flex-direction: row;
     gap: 100px;
     padding-top: 20px;
-    overflow:hidden;
-    padding-left:20px
-
-
+    overflow: hidden;
+    padding-left: 20px
 }
-.rocklayer1{
-    width:100vw;
+
+.rocklayer1 {
+    width: 100vw;
     overflow: hidden;
     transform: translateY(8px);
     z-index: 0;
-    max-width: calc(100vw - 31px);
 
-    
+
 
 
 }
 
-.rockLayer1Path{
-    fill: var(--c9); /* Replace 'blue' with your desired color */
-
-
+.rockLayer1Path {
+    fill: var(--c9);
     
+    /* Replace 'blue' with your desired color */
+
+
+
+
 }
-.aboutSectionContainer{
+
+.aboutSectionContainer {
     display: flex;
     flex-direction: column;
     background-color: var(--c10);
 }
+
 @media (max-width: 1080px) {
 
     .aboutSection {
 
-        height:1800px;
+        height: 100%;
+        display: flex;
         flex-direction: column-reverse;
+        min-height: 500px;
 
-      }
 
-    .info { 
+    }
+
+    .info {
         display: flex;
         flex-direction: column;
         width: 80vw;
-        
         text-align: center;
         align-items: center;
     }
 
-    .profilePic{
+    .profilePic {
         border-radius: 50%;
-        width: 300px; 
+        width: 300px;
         color: #e6e6e6
     }
 
-    .linksWithIcons{
+    .linksWithIcons {
+        justify-items: center;
+        gap: 6vw;
 
-    justify-items: center;
-    gap:60px;
 
-
-}
+    }
 }

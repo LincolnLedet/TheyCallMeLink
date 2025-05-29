@@ -1,10 +1,11 @@
 .mountainsContainer {
   position: relative;
 
-  height: 75vh;
+  height: 74vh;
   overflow: hidden;
   background-color: var(--c1); /* Now uses the dynamic color from JavaScript */
 }
+
 
 
 .layer {
@@ -12,12 +13,24 @@
   bottom: 0;
   display: block; /* Ensures SVG behaves properly */
   object-fit: cover; /* Ensures full coverage */
-  height: auto;
+
 
 
 }
 
 .clouds{
   height: 90vh;
+}
+@media (max-width: 1080px) {
+  .layer {
+    height: 320px;
+
+
+  }
+  .clouds{
+  height: 350px;
+  transform: translateX(-70px);
+
+}
 }
 

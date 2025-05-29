@@ -1,7 +1,17 @@
 /* src/App.module.css */
   
 .homepage{
+    box-sizing: border-box;
     border: 8px solid  var(--c10); /* Border thickness and color */
-    max-width: calc(100vw - 31px);
-    overflow: auto; 
+    max-width: calc(100vw - 16px);
+    overflow: hidden;   
+    margin: 0px;       /* Prevent children from spilling out */
+
 }
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+

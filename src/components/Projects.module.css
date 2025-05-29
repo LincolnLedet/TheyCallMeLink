@@ -91,9 +91,9 @@ h1 {
 .rockLayer2{
     width:100vw;
     overflow: hidden;
-    transform: translateY(8px);
+    transform: translateY(8px) ;
     z-index: 0;
-    max-width: calc(100vw - 31px);
+
     
 
 }
