@@ -24,7 +24,7 @@ const Resume: React.FC = () => {
                 </Worker>
             </div>
             <div className={styles.downloadButton}>
-                <a href={resume} download="Ledet_Resume.PDF" className={styles.downloadLink}>
+                <a href={resume} download="Ledet_Resume.pdf" className={styles.downloadLink}>
                     Download Resume
                 </a>
             </div>
