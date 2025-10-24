@@ -15,7 +15,7 @@ const aboutSection: React.FC = () => {
             <div className={styles.aboutSection}>
                 <div className={styles.info}>
                     <h1>Hey, I'm Lincoln</h1>
-                    <p>I'm a Full-Stack Software Developer and graduate from The University of Georgia.</p>
+                    <p>I'm a Full-Stack Software Developer and graduate from The University of Georgia. I used to work as a restoration botany technician in the mountains of Northern California, an experience that inspired this website’s design.</p>
                     <p>Outside of software, I spend my time gardening, playing guitar, organizing community events, and staying active through hiking, biking, and skateboarding. I believe hobbies and artistic outlets boost my creativity, happiness and productivity.</p>
                     <p>Thank you for checking out my website! Feel free to look around and explore some of my projects and easter eggs!</p>
                     <div className={styles.linksWithIcons}>
