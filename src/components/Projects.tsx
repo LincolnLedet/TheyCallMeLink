@@ -44,8 +44,7 @@ const Projects: React.FC = () => {
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 8 101 4"
-                    width="2000px"
-                    height="180px"
+                    preserveAspectRatio="none"
                 >
                     <path
                         className={styles.rockLayerPath}
